@@ -12,13 +12,16 @@
 - [License](#license)
 
 ## **Overview**
-Sora is a web-based chat application designed for real-time communication. Whether it's one-on-one messaging or large group discussions, Sora offers a smooth and secure chatting experience.
+Sora is a web-based chat application designed for real-time communication. Whether it's one-on-one messaging, large group discussions or channel broadcasting, Sora offers a smooth and secure chatting experience.
+
+Built with NextJS, NestJS and GraphQL.
 
 ## **Features**
 - **Real-time Messaging**: Fast and reliable communication.
 - **Group Chats**: Create and manage chatrooms for teams or friends.
+- **Channel**: Subscribe to your favorite content creators or celebrities for up-to-date broadcasting.
 - **Media Sharing**: Share images, files, and more.
-- **Secure Login**: Built-in authentication with optional 2FA.
+- **Secure Login**: Built-in authentication with credentials based, OAuth2 or optional 2FA.
 - **Community Plugins**: Extend functionality with custom plugins.
 
 ## **Getting Started**
