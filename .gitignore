@@ -23,11 +23,6 @@ build/
 dist/
 
 # misc
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
 .DS_Store
 *.pem
 
@@ -65,6 +60,8 @@ next-env.d.ts
 
 # IDEs and editors
 .idea/
+.run/
+.vscode/
 .project
 .classpath
 .c9/
