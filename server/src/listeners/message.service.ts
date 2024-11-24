@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { IChannelListener } from './ichannel-listener';
+import { IListener } from '../common/interfaces/listener.interface';
 
 @Injectable()
-export class MessageChannelService implements IChannelListener {
+export class MessageService implements IListener {
   getChannelName() {
     return 'message_channel';
   }

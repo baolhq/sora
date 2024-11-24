@@ -1,18 +1,18 @@
 import { Injectable, OnModuleInit, OnModuleDestroy } from '@nestjs/common';
 import { InjectDataSource } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
-import { MessageChannelService } from './message-channel.service';
+import { MessageService } from './message.service';
 import { Client, Notification } from 'pg';
-import { IChannelListener } from './ichannel-listener';
+import { IListener } from '../common/interfaces/listener.interface';
 
 @Injectable()
 export class ListenerService implements OnModuleInit, OnModuleDestroy {
   private client: Client; // For listening to raw PostgreSQL notifications
-  private readonly listeners: IChannelListener[];
+  private readonly listeners: IListener[];
 
   constructor(
     @InjectDataSource() private readonly dataSource: DataSource,
-    messageChannelListener: MessageChannelService,
+    messageChannelListener: MessageService,
   ) {
     this.listeners = [messageChannelListener];
   }
