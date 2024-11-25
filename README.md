@@ -1,4 +1,7 @@
 # **Sora**
+
+> This repository is archived for references only, please follow us on [github.com/ashen-chat](https://github.com/ashen-chat)
+
 **A modern and user-friendly chat app built for seamless communication.**
 
 ## **Table of Contents**
