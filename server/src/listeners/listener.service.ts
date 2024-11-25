@@ -3,7 +3,7 @@ import { InjectDataSource } from '@nestjs/typeorm';
 import { DataSource } from 'typeorm';
 import { MessageService } from './message.service';
 import { Client, Notification } from 'pg';
-import { IListener } from '../common/interfaces/listener.interface';
+import { IListener } from '../common/interfaces';
 
 @Injectable()
 export class ListenerService implements OnModuleInit, OnModuleDestroy {

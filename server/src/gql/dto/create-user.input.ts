@@ -6,5 +6,14 @@ export class CreateUserInput {
   display_name: string;
 
   @Field()
+  tag: string;
+
+  @Field()
   email: string;
+
+  @Field()
+  password: string;
+
+  @Field()
+  gender: string;
 }

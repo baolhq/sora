@@ -9,5 +9,14 @@ export class UpdateUserInput {
   display_name?: string;
 
   @Field({ nullable: true })
+  tag?: string;
+
+  @Field({ nullable: true })
   email?: string;
+
+  @Field({ nullable: true })
+  avatar_url?: string;
+
+  @Field({ nullable: true })
+  gender?: string;
 }

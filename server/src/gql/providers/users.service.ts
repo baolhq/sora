@@ -1,19 +1,18 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { CreateUserInput } from './dto/create-user.input';
-import { UpdateUserInput } from './dto/update-user.input';
-import { PrismaService } from '../../prisma/prisma.service';
+import { CreateUserInput, UpdateUserInput } from '../dto';
+import { PrismaService } from '../../providers/prisma';
 
 @Injectable()
-export class UserService {
+export class UsersService {
   constructor(private readonly prisma: PrismaService) {}
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   create(createUserInput: CreateUserInput) {
-    return 'This action adds a new user';
+    return 'This action adds a new users';
   }
 
   findAll() {
-    return `This action returns all user`;
+    return this.prisma.user.findMany();
   }
 
   async findOne(id: string) {

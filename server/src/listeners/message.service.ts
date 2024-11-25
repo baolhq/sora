@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { IListener } from '../common/interfaces/listener.interface';
+import { IListener } from '../common/interfaces';
 
 @Injectable()
 export class MessageService implements IListener {

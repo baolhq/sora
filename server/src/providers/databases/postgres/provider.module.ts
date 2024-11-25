@@ -2,8 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import * as path from 'path';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { ListenerService } from '../../../listeners/listener.service';
-import { MessageService } from '../../../listeners/message.service';
+import { ListenerService, MessageService } from '../../../listeners';
 import * as process from 'node:process';
 
 @Module({
